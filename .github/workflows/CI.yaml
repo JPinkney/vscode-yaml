@@ -30,6 +30,7 @@ jobs:
         with:
           path: che-plugin-registry
           token: ${{ secrets.PAT }}
+          committer: Josh Pinkney <jpinkney@gmail.com>
           commit-message: Update ${{ steps.che-plugin-updater.outputs.name }} to ${{ steps.che-plugin-updater.outputs.version }}
           signoff: true
           base: master
